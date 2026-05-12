@@ -5,7 +5,7 @@ const int LED = 13;
 const int BUTTON = 7; // el pin on es connecta el interruptor
 int val = 0;
 // val és la variable on emmagatzemem l'estat del interruptor
-
+int bEstat = LOW;
 
 void setup() { // funció per a inicialitzar els paràmetres
   pinMode(LED, OUTPUT);
@@ -18,10 +18,8 @@ void loop() { // bucle que es repeteix una vegada inicialitzat
   // l'interruptor per a veure si està pres. (Voltatge HIGH)
   // comprovem si el butó està pres
   if (val == HIGH) { // en cas de que sí
-      digitalWrite(LED, HIGH); // engega 
-  }
-  else 
-  {
-    digitalWrite(LED, LOW); //apage el LED
+	bEstat = !bEstat;
+      digitalWrite(LED, bEstat); // engega o apaga
+	delay(1000); 
   }
 }
