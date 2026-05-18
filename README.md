@@ -1,5 +1,4 @@
 # Practica-Inici-Arduino
-# Practica-Inici-Arduino
 Document pràctica Arduino.pdf amb 5 pràctiques per a començar a dissenyar amb Arduino.</br>
 Des de fer un led intermitent a implementar un servomotor amb potenciòmetre.</br>
 Amb preguntes a desenvolupar al final de cada exercici.
